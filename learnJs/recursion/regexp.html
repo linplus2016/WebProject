@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>递归，预编译</title>
+</head>
+<body>
+<script>
+    console.log(woindow.a);
+    function fn(a) {
+        console.log(a);
+        var a = 123;
+        console.log(a);
+        function a(){}
+        console.log(a);
+        var b = function(){}
+        console.log(b);
+        function d(){}
+
+    }
+
+    fn(1)
+
+
+
+
+//    预编译发生在函数执行的前一刻
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
