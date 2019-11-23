@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle JavaScript</title>
+</head>
+<body>
+    <h1>Miracle JavaScript</h1>
+    <p id="changeContent">JavaScript can change HTML element's content</p>
+    <script>
+        function changeContent(){
+        content=document.getElementById("changeContent");  // 找到元素
+        content.innerHTML="Ha Ha Ha, What a miracle Day!!!"  // 改变内容
+        }
+    </script>
+    <button type="button" onclick="changeContent()" >miracle button</button>
+</body>
+</html>
+
+<!--
+button标签三种type
+submit  该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）
+button  该按钮是可点击的按钮（Internet Explorer 的默认值）
+reset  该按钮是重置按钮（清除表单数据）
+-->
