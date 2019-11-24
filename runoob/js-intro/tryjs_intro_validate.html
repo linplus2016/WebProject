@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle JavaScript</title>
+
+</head>
+<body>
+    <h1>My First JavaScript</h1>
+    <p>请输入数字。如果输入值不是数字，浏览器会弹出提示框</p>
+    <input id="num" type="text">
+    <script>
+        function checkNum() {
+            var num=document.getElementById("num").value; // 取值
+            if(num==""||isNaN(num))
+            {
+                alert("不是数字");
+            }
+            else
+            {
+                alert("是数字");
+            }
+
+        }
+        
+    </script>
+    <button type="button" onclick="checkNum()">Check Number</button>
+
+</body>
+</html>

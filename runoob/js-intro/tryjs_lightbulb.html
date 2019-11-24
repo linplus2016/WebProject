@@ -7,26 +7,20 @@
 <body>
 <script>
     function changeItem() {
-        bulbStatus=document.getElementById("bulbImage")
-        if(bulbStatus.src.match("bulbon"))
-        {
-            bulbStatus.src="https://www.runoob.com/images/pic_bulboff.gif"
-        }
-        else
-        {
-            bulbStatus.src="https://www.runoob.com/images/pic_bulbon.gif"
+        var bulbStatus = document.getElementById("bulbImage")
+        if (!bulbStatus.src.match("bulbon")) {
+            bulbStatus.src = "https://www.runoob.com/images/pic_bulbon.gif"
+        } else {
+            bulbStatus.src = "https://www.runoob.com/images/pic_bulboff.gif"
         }
     }
 
     function changeButton() {
         buttonStatus=document.getElementById("switchButton")
-        if (buttonStatus.innerText.match("指向"))
-        {
-            buttonStatus.innerText="双手离开闪耀的灯球儿"
-        }
-        else
-        {
-            buttonStatus.innerText="双手指向闪耀的灯球儿"
+        if (buttonStatus.innerText.match("指向")) {
+            buttonStatus.innerText = "双手指向闪耀的灯球儿"
+        } else {
+            buttonStatus.innerText = "双手离开闪耀的灯球儿"
         }
 
     }
