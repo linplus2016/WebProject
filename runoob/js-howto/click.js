@@ -1,5 +1,5 @@
-function click() {
-    var text=document.getElementById("text");
-    text.innerHTML="qwqweqweqweqweqwe";
+function my() {
+    var text=document.getElementById("text")
+    text.innerHTML="change it";
 
-}
+    }
