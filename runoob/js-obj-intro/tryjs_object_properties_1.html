@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle JavaScript</title>
+</head>
+<body>
+<p>访问对象属性的两种方法</p>
+<p>
+    obj.property 或 obj["property"]
+</p>
+<p id="testObj"></p>
+<script>
+    var person = {
+        firstName:"John",
+        lastName:"Joe",
+        age:35,
+        id:12312
+    }
+
+    document.getElementById("testObj").innerHTML = person.firstName + " is " + person["age"] + "了";
+</script>
+
+</body>
+</html>
