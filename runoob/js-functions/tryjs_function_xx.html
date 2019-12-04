@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle JavaScript</title>
+</head>
+<body>
+
+<p id="showText">000000000000</p>
+<button id="click" type="button" onclick="clickMe()">CLICK ME</button>
+<button type="button" onclick="welcome('Joe','Manufacture')">WELCOME</button>
+<button type="button" onclick="welcome('Carl','Gangster')">WELCOME1</button>
+
+<script>
+
+    var text = "Hello World! " + "<br>" + Date() + "<br>" + welcome('程咬金','王爷');
+    function clickMe()
+    {
+        window.alert(text);
+    }
+
+    document.getElementById("showText").innerHTML = text;
+
+    function welcome(name,job) {
+        alert("Welcome " + name + ", the " + job + "!");
+        return name +" "+ job;
+    }
+
+
+</script>
+
+</body>
+</html>
