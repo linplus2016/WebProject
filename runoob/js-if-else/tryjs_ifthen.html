@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle Javascript</title>
+</head>
+<body>
+<p>如果时间早于20：00，会得到问候"Good day"</p>
+<button onclick="goodDay()">click here</button>
+<p id="greeting">1231</p>
+
+<script>
+    function goodDay(){
+        var x="";
+        var time = new Date().getHours();
+        if (time < 20)
+            x = "Good day!";
+        else
+            x = "Good night";
+        document.getElementById("greeting").innerHTML = x;
+    }
+
+
+</script>
+</body>
+</html>
