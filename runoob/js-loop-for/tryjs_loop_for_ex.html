@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Miracle JavaScript</title>
+</head>
+<body>
+    <p>点击按钮循环代码5次</p>
+
+    <button onclick="loop()" type="button">click here</button>
+    <p id="showNum"></p>
+    <script>
+        function loop() {
+            var x="";
+            for (var i=0; i<=5; i++){
+                x+="数字是"+i+"<br>"
+
+            }
+            document.getElementById("showNum").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
